@@ -1,14 +1,17 @@
-﻿namespace GettingStarted;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-public partial class App : Application
+namespace GettingStarted
 {
-	public App()
-	{
-		InitializeComponent();
-	}
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
+        }
 
-	protected override Window CreateWindow(IActivationState activationState)
-	{
-		return new Window(new MainPage());
-	}
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new MainPage());
+        }
+    }
 }

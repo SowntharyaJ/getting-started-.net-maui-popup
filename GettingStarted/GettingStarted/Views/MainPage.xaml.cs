@@ -1,23 +1,24 @@
-﻿namespace GettingStarted;
-
-public partial class MainPage : ContentPage
+﻿namespace GettingStarted
 {
-	public MainPage()
-	{
-		InitializeComponent();
-	}
-	private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-	{
-		popup.Show();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-		// Shows SfPopupLayout at the center.
-		//popupLayout.Show();
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popup.Show();
 
-		// Shows SfPopupLayout at the specified X and y position.
-		//popupLayout.Show(100, 100);
+            // Shows SfPopup at the center.
+            //popup.Show();
 
-		// Shows SfPopupLayout at the position relative to the specified view.
-		//popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom);
-	}
+            // Shows SfPopup at the specified X and y position.
+            //popup.Show(100, 100);
+
+            // Shows SfPopup at the position relative to the specified view.
+            //popup.ShowRelativeToView(label, RelativePosition.AlignBottom);
+        }
+    }
 }
-
